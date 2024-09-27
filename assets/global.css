@@ -26,7 +26,6 @@ body {
 #name-and-greetings #greetings {
   font-weight: 700;
   letter-spacing: -0.05em;
-  font-size: 1em;
   margin-bottom: 0.2em;
   font-size: 1.5em;
 }
@@ -46,4 +45,54 @@ body {
 
 body main {
   padding: 5rem;
+}
+
+#hero-image {
+  border-radius: 5000px;
+  overflow: hidden;
+  border: 1px;
+}
+
+@media (max-width: 800px) {
+  body main {
+    padding: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  #name-and-greetings #greetings {
+    font-size: 1.2em;
+  }
+
+  #name-and-greetings #name {
+    font-size: 2em;
+  }
+
+  #name-and-greetings {
+    max-width: 60%;
+  }
+
+  #hero-image {
+    width: 12rem;
+    height: 12rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #name-and-greetings {
+    max-width: 58%;
+  }
+
+  #hero-image {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  #name-and-greetings #greetings {
+    font-size: 0.8em;
+  }
+
+  #name-and-greetings #name {
+    font-size: 1.3em;
+  }
 }
