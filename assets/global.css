@@ -43,8 +43,39 @@ body {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  background: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+  font: inherit;
+}
+
+button {
+  text-decoration: none;
+  color: inherit;
+  background: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+}
+
 body main {
   padding: 5rem;
+  padding-bottom: 15rem;
+}
+
+.experience-card-content {
+  flex-grow: 1;
+  margin-left: 0.7rem;
+}
+
+.card-title {
+  font-size: 0.85rem;
 }
 
 #hero-image {

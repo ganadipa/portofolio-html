@@ -80,6 +80,14 @@ h2 {
   margin-bottom: 1em;
 }
 
+.gap-xl {
+  gap: 1.3rem;
+}
+
+.mt-sm {
+  margin-top: 1em;
+}
+
 .card-title {
   font-weight: 600;
   font-size: 1rem;
@@ -112,6 +120,12 @@ h6 {
   padding-top: 6px;
   padding-left: 11px;
   padding-right: 11px;
+
+  transition: background-color 0.3s ease;
+}
+
+.skill-item:hover {
+  background-color: rgb(20 20 20);
 }
 
 .skill-item-inverted {
@@ -127,6 +141,19 @@ h6 {
   padding-bottom: 6px;
   padding-left: 11px;
   padding-right: 11px;
+
+  transition: background-color 0.3s ease;
+}
+
+.skill-item-inverted:disabled {
+  background-color: #b0b0b0;
+  color: #666666;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.skill-item-inverted:not(:disabled):hover {
+  background-color: rgb(220, 243, 228); /* Your hover color */
 }
 
 .h2-block {
@@ -174,6 +201,7 @@ h6 {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
     0 4px 6px -4px rgba(0, 0, 0, 0.1);
   width: 45%;
+
   transition: box-shadow 0.3s ease-out;
 }
 
@@ -259,10 +287,55 @@ h6 {
   row-gap: 1rem;
   justify-content: space-evenly;
   flex-direction: row;
-  align-items: center;
+  align-items: stretch;
   margin: 0;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.paragraph-text span {
+  transition: color 0.3s ease;
+}
+
+.paragraph-text span:hover {
+  color: rgb(134 239 172);
+}
+
+div.flex .show-on-group-hover {
+  opacity: 0;
+  transform: translateX(0);
+
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+div.flex:hover .show-on-group-hover {
+  opacity: 0.9;
+  transform: translateX(20px);
+}
+
+div.flex .card-title {
+  transition: color 0.3s ease;
+}
+
+div.flex:hover .card-title {
+  color: rgb(134 239 172);
+}
+
+.bg-for-svg {
+  background-color: rgb(38 38 38);
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
+  color: white;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 6px;
+}
+
+.clickable-contact {
+  cursor: pointer;
+  color: rgb(59 130 246);
 }
 
 @media (max-width: 800px) {
@@ -280,15 +353,6 @@ h6 {
     width: 2.3rem;
     height: 2.3rem;
     font-weight: 500;
-  }
-
-  .experience-card-content {
-    flex-grow: 1;
-    margin-left: 0.7rem;
-  }
-
-  .card-title {
-    font-size: 0.85rem;
   }
 
   .skill-item {
