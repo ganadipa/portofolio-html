@@ -333,9 +333,10 @@ div.flex:hover .card-title {
   margin-right: 6px;
 }
 
-.clickable-contact {
+a.clickable-contact {
+  color: #4caf50;
+  text-decoration: underline;
   cursor: pointer;
-  color: rgb(59 130 246);
 }
 
 @media (max-width: 800px) {
